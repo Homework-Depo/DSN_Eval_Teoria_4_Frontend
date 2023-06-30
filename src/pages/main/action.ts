@@ -6,7 +6,7 @@ const action = async ({ request }: { request: Request }) => {
   const otpSecretKey = formData.get("otpSecretKey") as string;
   const errors = {} as User;
 
-  const response = await fetch("http://localhost:3000/api/v1/enable", {
+  const response = await fetch("http://44.201.110.2:3000/api/v1/enable", {
     method: "POST",
     credentials: "include",
     headers: {

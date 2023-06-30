@@ -34,7 +34,7 @@ const action = async ({ request }: { request: Request }) => {
   }
 
   try {
-    const response = await fetch("http://localhost:3000/api/v1/password-reset/submit", {
+    const response = await fetch("http://44.201.110.2:3000/api/v1/password-reset/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
