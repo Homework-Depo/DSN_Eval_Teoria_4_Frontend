@@ -5,7 +5,6 @@ import { Box, Button, Container, FormControl, FormGroup, FormHelperText, FormLab
 import { Form, Link, useActionData } from "react-router-dom";
 import { Turnstile } from "@marsidev/react-turnstile";
 import { Errors } from "./types";
-import { useState } from 'react';
 
 export default function Register() {
   //const [cData, setCData] = useState(Date.now().toString());
