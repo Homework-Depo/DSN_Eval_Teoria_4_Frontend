@@ -12,7 +12,7 @@ const loader = async ({ request }: { request: Request }) => {
     return errors;
   }
 
-  const response = await fetch('http://44.201.110.2:3000/api/v1/password-reset/send', {
+  const response = await fetch('http://3.94.173.130:3000/api/v1/password-reset/send', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
