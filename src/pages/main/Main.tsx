@@ -11,7 +11,7 @@ export default function Main() {
   const errors = useActionData() as User;
 
   const handleLogout = async () => {
-    const response = await fetch("http://44.201.110.2:3000/api/v1/logout", {
+    const response = await fetch("http://localhost:3000/api/v1/logout", {
       method: "POST",
       credentials: "include"
     });
@@ -24,7 +24,7 @@ export default function Main() {
   }
 
   const handleDisable2fa = async () => {
-    const response = await fetch("http://44.201.110.2:3000/api/v1/disable", {
+    const response = await fetch("http://localhost:3000/api/v1/disable", {
       method: "POST",
       credentials: "include"
     });

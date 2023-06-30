@@ -21,7 +21,7 @@ const action = async ({ request }: { request: Request }) => {
     return errors;
   }
   
-  const captchaResponse = await fetch("http://44.201.110.2:3000/api/v1/captcha", {
+  const captchaResponse = await fetch("http://localhost:3000/api/v1/captcha", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const action = async ({ request }: { request: Request }) => {
     return errors;
   }
 
-  const response = await fetch("http://44.201.110.2:3000/api/v1/login", {
+  const response = await fetch("http://localhost:3000/api/v1/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
